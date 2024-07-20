@@ -1,0 +1,226 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
+}
+.img-wrapper{
+position: relative;
+overflow: hidden;
+}
+.img-wrapper> .blur{
+display: block;
+width: 100% ;
+aspect-ratio: 1/1;
+object-fit: cover;
+object-position: center;
+}
+
+.img-wrapper> .content{
+position: absolute;
+inset: 0;
+transition: 2;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img-wrapper> .zoom,
+.img-wrapper> .content{
+    transition: 200ms ease-in-out;
+    
+}
+
+.img-wrapper:hover> video{
+    filter: blur(5px);
+}
+.img-wrapper:hover> .zoom{
+    transform: scale(1.1);
+}
+
+.img-wrapper >.content{
+    opacity: 0;
+}
+.img-wrapper:hover >.content{
+    opacity: 2;
+}
+.back{
+    background-color: lightgrey;
+    outline: 1px gray solid;
+}
+
+
+
+
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+   
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  .drop-content {
+    border-bottom-right-radius:30px ;
+    border-bottom-left-radius:30px ;
+    color: black;
+    display: none;
+    position:absolute;
+    background-color: rgb(245, 240, 240);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+    margin-top: 50px;
+  }
+  
+  
+  .drop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  
+  .drop-content a:hover {background-color: gray;
+  color: #080808;
+  }
+  
+  
+  .dropdown:hover .drop-content {display: block;}
+  
+  
+  .d:hover .dropbtn {background-color: #3e8e41;}
+
+.hand{
+    margin-top: 120px;
+    margin-left: 650px;
+    background-color: rgb(241, 239, 239);
+    text-align: center;
+    margin-right: 650px;
+    font-family: 'Franklin Gothic Medium';
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.handimg{
+    width: 1550px;
+    height: 700px;
+   margin-top: 100px;
+}
+.box-shadow{
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-hover{
+    position: relative;
+    overflow: hidden;
+    }
+    .img-hover> .blur2{
+    display: block;
+   width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    }
+    
+    .img-hover> .content2{
+    position: absolute;
+    inset: 0;
+    transition: 2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .img-hover> .blur2,
+    .img-hover> .content2{
+        transition: 2s ease-in-out;
+        
+    }
+    
+    
+    
+    .img-hover >.content2{
+        opacity: 0;
+    }
+    .img-hover:hover >.content2{
+        opacity: 2;
+    }
+    .box-shadow1{
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .box-shadow2{
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    }
+    .active{
+        text-decoration: underline;
+    }
+   .head-img{
+    font-weight: bold;
+    font-family: cooper;
+    
+   }
+   form{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+   }
+   .inline{
+    display: inline-block;
+   }
+   .inline3{
+    display: inline-block;
+   text-align: right;
+margin-left: 70px;
+   }
+   .inline4{
+    display: inline-block;
+    margin-left: 10px;
+   }
+   .hh4{
+    font-size:60px ;
+  border-bottom:2px solid black ;
+    text-decoration: bold;
+    text-align: center;
+
+   }
+.border1{
+    border-right: 2px solid white;
+}
+.margin{
+    margin-left: 200px;
+}
+.hh5{
+    margin-left: 200px;
+    margin-right: 150px;
+}
+ul li a .active{
+    background-color: black;
+    color:white;
+    border-radius: 80px;
+}
